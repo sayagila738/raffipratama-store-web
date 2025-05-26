@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to bottom right, #6e00ff, #f0eaff);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-container {
+  padding: 40px 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-beli {
+  background: #a770ef;
+}
+
+.btn-beli:hover {
+  background: #d6a4ff;
+}
+
+.btn-discord {
+  background: #5865F2;
+}
+
+.btn-discord:hover {
+  background: #738aff;
+}
+
+.hero-image {
+  width: 220px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255,255,255,0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.08);
+}
+
+.footer {
+  background: rgba(0,0,0,0.2);
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .button-group {
+    flex-direction: row;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .hero-image {
+    width: 260px;
+  }
+}
